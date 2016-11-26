@@ -1,0 +1,388 @@
+<html>
+    <head>
+        
+        <title>
+            NFAC | Our Council
+        </title>
+        <meta charset="UTF-8">
+        <link rel="icon" href="theImages/NFAC-Logo%201.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="theWebAPI/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="theWebAPI/bootstrap.min.css">
+        <link rel="stylesheet" href="theIndexStyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Sorts+Mill+Goudy" rel="stylesheet">
+        <style>
+            
+            .theCouncilImagesDiv_d
+            {
+                padding: 100px;
+                width: 100%;
+                background-color: #fefefe;
+                padding-top: 150px;
+            }
+
+            .theCouncilImagesContainer
+            {
+                margin: 0px;
+                padding: 0px;
+                width: 100%;
+                padding: 5px;
+                margin-top: 10px;
+            }
+
+            .theCouncilImage
+            {
+                margin-left: auto;
+                margin-right: auto;
+                height: 240px;
+                width: 240px;
+                border-radius: 1000px;
+                transition-property: all;
+                transition-duration: 0.5s;
+            }
+
+            .theCouncilMemberName
+            {
+                width: 100%;
+                text-align: center;
+                padding: 5px;
+                font-family: sans-serif;
+                border-bottom: 1px solid #212121;
+                opacity: 0;
+                transition-property: all;
+                transition-duration: 0.5s;
+            }
+            
+            
+            
+            .theCouncilMemberPost
+            {
+                font-family: sans-serif;
+                width: 100%;
+                text-align: center;
+                padding: 0px;
+                opacity: 0;
+                transition-property: all;
+                transition-duration: 0.5s;
+            }
+
+            .theCouncilImagesRow_d
+            {
+                margin-bottom: 50px;
+            }
+            
+            .theCouncilTab:hover .theCouncilMemberPost
+            {
+                opacity: 1;
+            }
+            
+            .theCouncilTab:hover .theCouncilMemberName
+            {
+                opacity: 1;
+            }
+            
+            .theCouncilTab:hover .theCouncilImage
+            {
+                transform: scale(1.1);
+            }
+            
+            @media only screen and (max-width:769px){
+
+            .theCouncilImagesDiv_d
+            {
+                width: 100%;
+                background-color: #fefefe;
+                padding: 50px;
+            }
+
+            .theCouncilTab
+            {
+                padding: 10px;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+    
+            .theCouncilImage
+            {
+                margin-left: auto;
+                margin-right: auto;
+                height: 200px;
+                width: 200px;
+                border-radius: 1000px;
+            }
+
+        }
+
+
+
+
+        @media only screen and (max-width:767px){
+
+            .theCouncilImagesDiv_d
+            {
+                width: 100%;
+                background-color: #fefefe;
+                padding: 50px;
+            }
+
+            .theCouncilTab
+            {
+                padding: 10px;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+    
+            .theCouncilImage
+            {
+                margin-left: auto;
+                margin-right: auto;
+                height: 200px;
+                width: 200px;
+                border-radius: 1000px;
+            }
+
+        }
+
+            
+        </style>
+        
+    </head>
+
+    <body onload="theVariableSetup()" class="theBody">
+        
+        <header class="theHeader_d">
+        
+            <div class="theLogoImageDiv">
+                <img class="theLogoImage" src="theImages/NFAC-Logo%201.png">
+                <h4 class="theNFACLogoCaption">
+                    <span class="theNFACLogoCaptionItem" style="color:#ff9800">NUST</span><br>
+                    <span class="theNFACLogoCaptionItem" style="color:#ff7600">FINE ARTS</span><br>
+                    <span class="theNFACLogoCaptionItem" style="color:ff9800">CLUB</span>
+                </h4>
+            </div>
+        
+            <div class="theHamburgerButtonContainer">
+                <button class="theHamburgerButton_d hamburger hamburger--collapse" type="button" onclick="theMenuButtonClickEvent()" >
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>   
+            </div>
+        </header>
+        
+        <div class="theMenuDiv">
+            
+            <div class="theMenuDivItemsList">
+                
+                <a href="index.html" class="theMenuItemAnchore">Home</a>
+                <a href="AboutUs.html" class="theMenuItemAnchore">About Us</a>
+                <a href="Events.html" class="theMenuItemAnchore">Events</a>
+                <a href="Council.html" class="theMenuItemAnchore">Council</a>
+                <a href="Sponsers.html" class="theMenuItemAnchore">Our Partners &amp; Sponsers</a>
+                <a href="ContactUs.php" class="theMenuItemAnchore">Contact Us</a>
+            
+            </div>
+            
+            <div class="theMenuDivTextDiv">
+                <p class="theMenuDivTextPara">
+                    Materials from the Harry Potter series of films and from the film Fantastic Beasts And Where To Find Them are courtesy of Warner Bros. Entertainment.
+                    Harry Potter, Fantastic Beasts and Pottermore Publishing Rights © J.K. Rowling. Pottermore.com © Pottermore Limited
+                </p>
+            </div>
+            
+        </div>
+        
+        <div class="theAboutUsFrontDiv_d" id="theFrontDiv_d_ID" style="background-image: url(theImages/ourCouncilHeroImage.jpg);">
+            <div class="theAboutUsFrontDivContentDiv_d">
+                <h1 class="theAboutUsFrontDivHeading_d">
+                    <span class="theAboutUsFrontDivHeadingSpan_d">
+                        Our Council
+                    </span>
+                </h1>
+            </div>
+        </div>
+        
+        <div class="theCouncilImagesDiv_d">
+        
+            <div class="container-fluid theCouncilImagesContainer">
+                
+                <div class="row theCouncilImagesRow_d">
+                
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 theCouncilTab">
+                        <div style="display:flex">
+                                <img class="theCouncilImage" src="theCouncilImages/AssadPic.jpg">
+                        </div>
+                        <h2 class="theCouncilMemberName">ASSAD ABBASS</h2>
+                        <h4 class="theCouncilMemberPost">President | NFAC</h4>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 theCouncilTab">
+                        <div style="display:flex">
+                            <img class="theCouncilImage" src="theCouncilImages/AssadPic.jpg">
+                        </div>
+                        <h2 class="theCouncilMemberName">ASSAD ABBASS</h2>
+                        <h4 class="theCouncilMemberPost">President | NFAC</h4>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 theCouncilTab">
+                        <div style="display:flex">
+                            <img class="theCouncilImage" src="theCouncilImages/AssadPic.jpg">
+                        </div>
+                        <h2 class="theCouncilMemberName">ASSAD ABBASS</h2>
+                        <h4 class="theCouncilMemberPost">President | NFAC</h4>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 theCouncilTab">
+                        <div style="display:flex">
+                            <img class="theCouncilImage" src="theCouncilImages/AssadPic.jpg">
+                        </div>
+                        <h2 class="theCouncilMemberName">ASSAD ABBASS</h2>
+                        <h4 class="theCouncilMemberPost">President | NFAC</h4>
+                    </div>
+                    
+                </div>
+                
+                <div class="row theCouncilImagesRow_d">
+                
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 theCouncilTab">
+                        <div style="display:flex">
+                            <img class="theCouncilImage" src="theCouncilImages/AssadPic.jpg">
+                        </div>
+                        <h2 class="theCouncilMemberName">ASSAD ABBASS</h2>
+                        <h4 class="theCouncilMemberPost">President | NFAC</h4>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 theCouncilTab">
+                        <div style="display:flex">
+                            <img class="theCouncilImage" src="theCouncilImages/AssadPic.jpg">
+                        </div>
+                        <h2 class="theCouncilMemberName">ASSAD ABBASS</h2>
+                        <h4 class="theCouncilMemberPost">President | NFAC</h4>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 theCouncilTab">
+                        <div style="display:flex">
+                            <img class="theCouncilImage" src="theCouncilImages/AssadPic.jpg">
+                        </div>
+                        <h2 class="theCouncilMemberName">ASSAD ABBASS</h2>
+                        <h4 class="theCouncilMemberPost">President | NFAC</h4>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 theCouncilTab">
+                        <div style="display:flex">
+                            <img class="theCouncilImage" src="theCouncilImages/AssadPic.jpg">
+                        </div>
+                        <h2 class="theCouncilMemberName">ASSAD ABBASS</h2>
+                        <h4 class="theCouncilMemberPost">President | NFAC</h4>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        
+        </div>
+        
+        <div class="theFooter" id="footer_ID">
+            <h5 class="theSocialHeading">FOLLOW US ON</h5>
+            <div class="theSocialIconsDiv">
+                <div class="theSocialIconsContainer">
+                        <a href="#" target="_blank" class="theSocialButton theTwitterButton sb_d" title="Follow us on Twitter"></a>
+                        <a href="https://www.facebook.com/search/top/?q=nust%20fine%20arts%20club" target="_blank" class="theSocialButton theFaceBookButton sb_d" title="Follow us on Facebook"></a>
+                        <a href="#" target="_blank" class="theSocialButton theInstagramButton sb_d" title="Follow us on Instagram"></a>
+                        <a href="https://www.google.com/maps/place/NUST/@33.6426397,72.9931107,15z/data=!4m5!3m4!1s0x0:0x1fd18cec8a12962!8m2!3d33.6426397!4d72.9931107" target="_blank" class="theSocialButton theLocationButton sb_d" title="Follow us on Instagram"></a>
+                        <img src="theImages/facebookIconWhite.svg" style="height:0px;width:0px">
+                        <img src="theImages/locationIconWhite.svg" style="height:0px;width:0px">
+                        <img src="theImages/theTwitterButtonWhite.svg" style="height:0px;width:0px">
+                        <img src="theImages/instagramIconWhite.svg" style="height:0px;width:0px">
+                </div>
+            </div>
+            <div class="theFooterAnchoreList">
+                <div style="margin-left:auto;margin-right:auto">
+                    <a href="Events.html" class="theFooterAnchore fa1">EVENTS</a>
+                    <a href="Council.html" class="theFooterAnchore fa2">COUNCIL</a>
+                    <a href="AboutUs.html" class="theFooterAnchore fa3">ABOUT US</a>
+                    <a href="ContactUs.php" class="theFooterAnchore fa4">CONTACT US</a>
+                    <a href="Sponsers.html" class="theFooterAnchore fa5">OUR PARTNERS &amp; SPONSERS</a>
+                </div>
+            </div>
+        
+            <div class="theFooterLogoDiv">
+                <div style="margin-left:auto;margin-right:auto">
+                    <a href="http://nust.edu.pk/Pages/Home.aspx" target="_blank">
+                        <img title="Visit Nust" src="theImages/NUST_Vector.png" class="theFootorLogoImage">
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="theBelowFooterDiv">
+            <p class="theBelowFooterTextPara">
+                Materials from the Harry Potter series of films and from the film Fantastic Beasts And Where To Find Them are courtesy of Warner Bros. Entertainment.
+                Harry Potter, Fantastic Beasts and Pottermore Publishing Rights © J.K. Rowling. Pottermore.com © Pottermore Limited
+            </p>
+        </div> 
+        
+        
+        <script src="theWebAPI/jQuery.min.js"></script>
+        <script src="theWebAPI/bootstrap.min.js"></script>
+        <script src="theWebAPI/TweenMax.min.js"></script>
+        <script src="theIndexScript.js"></script>
+        
+        <script>
+            
+            function theImageLoaderFunction()
+            {
+            }
+            
+            var theFrontDiv_d_ID, topPosTheFrontDiv,footer_ID;
+            
+            function onWindowScrollEvent()
+            {
+                if($(window).innerWidth() > 767){
+                    theFooterAnimation()
+                }
+            }
+            
+            var theFooterAnimationDone = 0;
+            function theFooterAnimation()
+            {
+                var topPos = window.innerHeight - footer_ID.getBoundingClientRect().top;
+                console.log(topPos + " " + footer_ID.offsetHeight);
+                if(topPos > footer_ID.offsetHeight/2 && theFooterAnimationDone == 0)
+                    {
+                        TweenMax.to($(".theSocialIconsContainer"),1,{scaleY:1});
+                        TweenMax.staggerTo($(".sb_d"),1,{scale:1,opacity:1,ease:Elastic.easeOut,delay:1},0.25);  
+                        TweenMax.to($(".theSocialHeading"),1,{marginLeft:0,opacity:1,delay:1.5,ease:Elastic.easeOut});
+                        TweenMax.staggerTo($(".theFooterAnchore"),1.25,{opacity:1,delay:1.5},0.25);
+                        setTimeout(function(){$(".theFootorLogoImage").addClass("theFootorLogoImageShow")},2500);
+                        theFooterAnimationDone = 1;
+                    }
+            }
+            
+            
+            function theMenuButtonClickEvent()
+            {
+                $(".hamburger").toggleClass("is-active");
+                $(".theMenuDiv").toggleClass("theMenuDivShow");
+                $(".theBody").toggleClass("stopScrolling");
+            }
+            
+            function theVariableSetup()
+            {
+                window.onload = function(){
+                    theImageLoaderFunction();
+                }
+                console.log("The variables have setup");
+                window.addEventListener("scroll", onWindowScrollEvent);
+                footer_ID = document.getElementById("footer_ID");
+                theFrontDiv_d_ID = document.getElementById("theFrontDiv_d_ID");
+                onWindowScrollEvent();
+            }
+            theVariableSetup();
+            onWindowScrollEvent();
+        </script>
+        
+        
+    </body>
+</html>

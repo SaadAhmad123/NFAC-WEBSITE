@@ -1,0 +1,506 @@
+<html>
+    <head>
+        <title>
+            NFAC | Our Events
+        </title>
+        <meta charset="UTF-8">
+        <link rel="icon" href="theImages/NFAC-Logo%201.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="theWebAPI/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="theWebAPI/bootstrap.min.css">
+        <link rel="stylesheet" href="theIndexStyle.css">
+        <link rel="stylesheet" href="eventsStyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Sorts+Mill+Goudy" rel="stylesheet">
+        <style>
+            .theLoaderDiv
+            {
+                position: fixed;
+                display: flex;
+                align-items: center;
+                margin: 0px;
+                padding: 0px;
+                height: 100vh;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background: rgba(0,0,0,1);
+                z-index: 30;
+            }
+        
+            .loader,
+            .loader:before,
+            .loader:after {
+                background: #ff8000;
+                -webkit-animation: load1 1s infinite ease-in-out;
+                animation: load1 1s infinite ease-in-out;
+                width: 1em;
+                height: 4em;
+            }
+            .loader {
+            color: #ff8000;
+            text-indent: -9999em;
+            margin: 88px auto;
+            position: relative;
+            font-size: 11px;
+            -webkit-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-animation-delay: -0.16s;
+            animation-delay: -0.16s;
+            }
+            .loader:before,
+            .loader:after {
+            position: absolute;
+            top: 0;
+            content: '';
+            }   
+            .loader:before {
+            left: -1.5em;
+            -webkit-animation-delay: -0.32s;
+            animation-delay: -0.32s;
+            }
+            .loader:after {
+            left: 1.5em;
+            }
+            @-webkit-keyframes load1 {
+            0%,
+            80%,
+            100% {
+            box-shadow: 0 0;
+            height: 4em;
+            }
+            40% {
+            box-shadow: 0 -2em;
+            height: 5em;
+            }
+            }
+            @keyframes load1 {
+            0%,
+            80%,
+            100% {
+            box-shadow: 0 0;
+            height: 4em;
+            }
+            40% {
+            box-shadow: 0 -2em;
+            height: 5em;
+            }
+                
+        </style>
+    </head>
+
+    <body onload="theVariableSetup()" class="theBody stopScrolling">
+        
+        <div class="theLoaderDiv">
+            <div style="margin-left:auto;margin-right:auto">
+                <div class="loader">Loading...</div>
+            </div>
+        </div>
+
+        <header class="theHeader_d">
+        
+            <div class="theLogoImageDiv">
+                <img class="theLogoImage" src="theImages/NFAC-Logo%201.png">
+                <h4 class="theNFACLogoCaption">
+                    <span class="theNFACLogoCaptionItem" style="color:#ff9800">NUST</span><br>
+                    <span class="theNFACLogoCaptionItem" style="color:#ff7600">FINE ARTS</span><br>
+                    <span class="theNFACLogoCaptionItem" style="color:ff9800">CLUB</span>
+                </h4>
+            </div>
+        
+            <div class="theHamburgerButtonContainer">
+                <button class="theHamburgerButton_d hamburger hamburger--collapse" type="button" onclick="theMenuButtonClickEvent()" >
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>   
+            </div>
+        </header>
+        
+        <div class="theMenuDiv">
+            
+            <div class="theMenuDivItemsList">
+                
+                <a href="index.html" class="theMenuItemAnchore">Home</a>
+                <a href="AboutUs.html" class="theMenuItemAnchore">About Us</a>
+                <a href="Events.html" class="theMenuItemAnchore">Events</a>
+                <a href="Council.html" class="theMenuItemAnchore">Council</a>
+                <a href="Sponsers.html" class="theMenuItemAnchore">Our Partners &amp; Sponsers</a>
+                <a href="ContactUs.php" class="theMenuItemAnchore">Contact Us</a>
+            
+            </div>
+            
+            <div class="theMenuDivTextDiv">
+                <p class="theMenuDivTextPara">
+                    Materials from the Harry Potter series of films and from the film Fantastic Beasts And Where To Find Them are courtesy of Warner Bros. Entertainment.
+                    Harry Potter, Fantastic Beasts and Pottermore Publishing Rights © J.K. Rowling. Pottermore.com © Pottermore Limited
+                </p>
+            </div>
+            
+        </div>
+        
+        <div class="theEventsFrontDiv_d">
+            <iframe width="100%" class="theVideoAM" volume='0' frameborder="0" allowfullscreen  id="theVideoAMID" style="opacity:1"></iframe>
+        </div>
+        
+        <div class="theEventHeadingDiv_d">
+            <h1 class="theEventHeading_d">
+                Our Events
+            </h1>
+        </div>
+        
+        <div class="theEventsGallaryDiv">
+        
+            <div class="container-fluid theEventsGallaryDivContentDiv">
+            
+                <!--
+                    How to use this thing:
+                    -> First Duplicate the set in a manner that the latest event set should be on the top.
+                    -> Enter the set and go into each row and there into each event Image col and change 
+                        the class name to theEventImageN where N is a number like 5,6,7 top to bottom is decesending 
+                        order and at the bottom the index is 0.
+                    -> Do this stuff in both the rows and then. Go to the javascript below.
+                    -> Go into the theEventImagesLoaderFunction() function and give the names of the image classes in 
+                        desecding order.
+                    -> Then also give the path to the other array and give the total count of the elements.
+                -->
+                
+                
+                <!--The event gallary set 3 START-->
+                <div class="row theEventRow">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 theEventImageCol">
+                        <img  class="theEventImage theEventImage5">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 theEventTextCol">
+                        <div>
+                            <h1 class="theEventNameHeading">
+                                Event Name
+                            </h1>
+                            <p class="theEventNamePara_d">
+                                Materials from the Harry Potter series of films and from the film Fantastic Beasts And Where To Find Them are courtesy of Warner Bros. Entertainment.
+                                Harry Potter, Fantastic Beasts and Pottermore Publishing Rights © J.K. Rowling. Pottermore.com © Pottermore Limited
+                            </p>
+                            <a href="#" class="theEventAnchor_d">KNOW MORE</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                                
+                <div class="row theEventRow">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 theEventImageCol Mobile Ipad">
+                        <img class="theEventImage theEventImage4">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 theEventTextCol">
+                        <div>
+                            <h1 class="theEventNameHeading">
+                                Event Name
+                            </h1>
+                            <p class="theEventNamePara_d">
+                                Materials from the Harry Potter series of films and from the film Fantastic Beasts And Where To Find Them are courtesy of Warner Bros. Entertainment.
+                                Harry Potter, Fantastic Beasts and Pottermore Publishing Rights © J.K. Rowling. Pottermore.com © Pottermore Limited
+                            </p>
+                            <a href="#" class="theEventAnchor_d">KNOW MORE</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 theEventImageCol Desktop">
+                        <img class="theEventImage theEventImage4">
+                    </div>
+                </div>
+                
+                <div class="row theEventRow Desktop">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 theBigEventText">
+                        <img class="theBigEventTextImage_d theShowCaseImage2">
+                    </div>
+                </div>
+                <!--The event gallary set 3 END-->
+                
+                
+                
+                <!--The event gallary set 2 START-->
+                <div class="row theEventRow">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 theEventImageCol">
+                        <img  class="theEventImage theEventImage3">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 theEventTextCol">
+                        <div>
+                            <h1 class="theEventNameHeading">
+                                Event Name
+                            </h1>
+                            <p class="theEventNamePara_d">
+                                Materials from the Harry Potter series of films and from the film Fantastic Beasts And Where To Find Them are courtesy of Warner Bros. Entertainment.
+                                Harry Potter, Fantastic Beasts and Pottermore Publishing Rights © J.K. Rowling. Pottermore.com © Pottermore Limited
+                            </p>
+                            <a href="#" class="theEventAnchor_d">KNOW MORE</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                                
+                <div class="row theEventRow">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 theEventImageCol Mobile Ipad">
+                        <img class="theEventImage theEventImage2">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 theEventTextCol">
+                        <div>
+                            <h1 class="theEventNameHeading">
+                                Event Name
+                            </h1>
+                            <p class="theEventNamePara_d">
+                                Materials from the Harry Potter series of films and from the film Fantastic Beasts And Where To Find Them are courtesy of Warner Bros. Entertainment.
+                                Harry Potter, Fantastic Beasts and Pottermore Publishing Rights © J.K. Rowling. Pottermore.com © Pottermore Limited
+                            </p>
+                            <a href="#" class="theEventAnchor_d">KNOW MORE</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 theEventImageCol Desktop">
+                        <img class="theEventImage theEventImage2">
+                    </div>
+                </div>
+                
+                <div class="row theEventRow Desktop">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 theBigEventText">
+                        <img class="theBigEventTextImage_d theShowCaseImage1">
+                    </div>
+                </div>
+                <!--The event gallary set 2 END-->
+                
+                
+                
+                
+                <!--The event gallary set 1 START-->
+                <div class="row theEventRow">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 theEventImageCol">
+                        <img class="theEventImage theEventImage1">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 theEventTextCol">
+                        <div>
+                            <h1 class="theEventNameHeading">
+                                Event Name
+                            </h1>
+                            <p class="theEventNamePara_d">
+                                Materials from the Harry Potter series of films and from the film Fantastic Beasts And Where To Find Them are courtesy of Warner Bros. Entertainment.
+                                Harry Potter, Fantastic Beasts and Pottermore Publishing Rights © J.K. Rowling. Pottermore.com © Pottermore Limited
+                            </p>
+                            <a href="#" class="theEventAnchor_d">KNOW MORE</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="row theEventRow">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 theEventImageCol Mobile Ipad">
+                        <img  class="theEventImage theEventImage0">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 theEventTextCol">
+                        <div>
+                            <h1 class="theEventNameHeading">
+                                Event Name
+                            </h1>
+                            <p class="theEventNamePara_d">
+                                Materials from the Harry Potter series of films and from the film Fantastic Beasts And Where To Find Them are courtesy of Warner Bros. Entertainment.
+                                Harry Potter, Fantastic Beasts and Pottermore Publishing Rights © J.K. Rowling. Pottermore.com © Pottermore Limited
+                            </p>
+                            <a href="#" class="theEventAnchor_d">KNOW MORE</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 theEventImageCol Desktop">
+                        <img class="theEventImage theEventImage0">
+                    </div>
+                </div>
+                
+                <div class="row theEventRow Desktop">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 theBigEventText">
+                        <img class="theBigEventTextImage_d theShowCaseImage0">
+                    </div>
+                </div>
+                <!--The event gallary set 1 END-->
+                
+                
+            </div>
+        
+        </div>
+        
+        
+        <div class="theFooter" id="footer_ID">
+            <h5 class="theSocialHeading">FOLLOW US ON</h5>
+            <div class="theSocialIconsDiv">
+                <div class="theSocialIconsContainer">
+                        <a href="#" target="_blank" class="theSocialButton theTwitterButton sb_d" title="Follow us on Twitter"></a>
+                        <a href="https://www.facebook.com/search/top/?q=nust%20fine%20arts%20club" target="_blank" class="theSocialButton theFaceBookButton sb_d" title="Follow us on Facebook"></a>
+                        <a href="#" target="_blank" class="theSocialButton theInstagramButton sb_d" title="Follow us on Instagram"></a>
+                        <a href="https://www.google.com/maps/place/NUST/@33.6426397,72.9931107,15z/data=!4m5!3m4!1s0x0:0x1fd18cec8a12962!8m2!3d33.6426397!4d72.9931107" target="_blank" class="theSocialButton theLocationButton sb_d" title="Follow us on Instagram"></a>
+                        <img src="theImages/facebookIconWhite.svg" style="height:0px;width:0px">
+                        <img src="theImages/locationIconWhite.svg" style="height:0px;width:0px">
+                        <img src="theImages/theTwitterButtonWhite.svg" style="height:0px;width:0px">
+                        <img src="theImages/instagramIconWhite.svg" style="height:0px;width:0px">
+                </div>
+            </div>
+            <div class="theFooterAnchoreList">
+                <div style="margin-left:auto;margin-right:auto">
+                    <a href="Events.html" class="theFooterAnchore fa1">EVENTS</a>
+                    <a href="Council.html" class="theFooterAnchore fa2">COUNCIL</a>
+                    <a href="AboutUs.html" class="theFooterAnchore fa3">ABOUT US</a>
+                    <a href="ContactUs.php" class="theFooterAnchore fa4">CONTACT US</a>
+                    <a href="Sponsers.html" class="theFooterAnchore fa5">OUR PARTNERS &amp; SPONSERS</a>
+                </div>
+            </div>
+        
+            <div class="theFooterLogoDiv">
+                <div style="margin-left:auto;margin-right:auto">
+                    <a href="http://nust.edu.pk/Pages/Home.aspx" target="_blank">
+                        <img title="Visit Nust" src="theImages/NUST_Vector.png" class="theFootorLogoImage">
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="theBelowFooterDiv">
+            <p class="theBelowFooterTextPara">
+                Materials from the Harry Potter series of films and from the film Fantastic Beasts And Where To Find Them are courtesy of Warner Bros. Entertainment.
+                Harry Potter, Fantastic Beasts and Pottermore Publishing Rights © J.K. Rowling. Pottermore.com © Pottermore Limited
+            </p>
+        </div> 
+        
+        
+        <script src="theWebAPI/jQuery.min.js"></script>
+        <script src="theWebAPI/bootstrap.min.js"></script>
+        <script src="theWebAPI/TweenMax.min.js"></script>
+        <script src="theIndexScript.js"></script>
+        <script>
+            
+            function theImageLoaderFunction()
+            {
+                document.getElementById("theVideoAMID").src="https://www.youtube.com/embed/zVlXK0b8tqM?rel=0&amp;controls=1&amp;showinfo=0;loop=0&amp;autoplay=1&amp;vq=medium"
+            }
+            
+            var theFrontDiv_d_ID, topPosTheFrontDiv,footer_ID;
+            
+            function onWindowScrollEvent()
+            {
+                if($(window).innerWidth() > 767){
+                    theFooterAnimation()
+                }
+            }
+            
+            var theFooterAnimationDone = 0;
+            function theFooterAnimation()
+            {
+                var topPos = window.innerHeight - footer_ID.getBoundingClientRect().top;
+                console.log(topPos + " " + footer_ID.offsetHeight);
+                if(topPos > footer_ID.offsetHeight/2 && theFooterAnimationDone == 0)
+                    {
+                        TweenMax.to($(".theSocialIconsContainer"),1,{scaleY:1});
+                        TweenMax.staggerTo($(".sb_d"),1,{scale:1,opacity:1,ease:Elastic.easeOut,delay:1},0.25);  
+                        TweenMax.to($(".theSocialHeading"),1,{marginLeft:0,opacity:1,delay:1.5,ease:Elastic.easeOut});
+                        TweenMax.staggerTo($(".theFooterAnchore"),1.25,{opacity:1,delay:1.5},0.25);
+                        setTimeout(function(){$(".theFootorLogoImage").addClass("theFootorLogoImageShow")},2500);
+                        theFooterAnimationDone = 1;
+                    }
+            }
+            
+            
+            
+            var areEventImagesLoaded = 0;
+            var areShowCaseImagesLoaded = 0;
+            //This function deals with the loading of the Images of events tabs with a lazy load effect.
+            function theEventImagesLoaderFunction()
+            {
+                if(areEventImagesLoaded==0){
+                var tabsEventImageClassNames = [
+                                        'theEventImage5',
+                                        'theEventImage4',
+                                        'theEventImage3',
+                                        'theEventImage2',
+                                        'theEventImage1',
+                                        'theEventImage0'
+                                     ];
+                var tabsEventImagesName = [
+                                        'theEventsImages/theEventImage1.jpg',    
+                                        'theEventsImages/theEventImage1.jpg',    
+                                        'theEventsImages/theEventImage1.jpg',    
+                                        'theEventsImages/theEventImage1.jpg',    
+                                        'theEventsImages/theEventImage1.jpg',    
+                                        'theEventsImages/theEventImage1.jpg'
+                                    ];
+                
+                var theEventImageTotalCount = 6;
+                var theEventImageIndexCount = 0
+                
+                var theInterval=setInterval(function(){
+                    if(theEventImageIndexCount >= theEventImageTotalCount){clearInterval(theInterval);}
+                    $("."+tabsEventImageClassNames[theEventImageIndexCount]).attr('src',tabsEventImagesName[theEventImageIndexCount]);
+                    theEventImageIndexCount++;
+                },100);
+                    areEventImagesLoaded = 1;
+                }
+                
+                if($(window).innerWidth() > 768 && areShowCaseImagesLoaded == 0){
+                
+                var theShowCaseImagesClassNames = [
+                                        'theShowCaseImage2',
+                                        'theShowCaseImage1',
+                                        'theShowCaseImage0',
+                                    ];
+                
+                var theShowCaseImagesNames = [
+                                        'theEventsImages/theEventShowCaseImage1.jpg',
+                                        'theEventsImages/theEventShowCaseImage1.jpg',
+                                        'theEventsImages/theEventShowCaseImage1.jpg',
+                                    ];
+                
+                var theShowCaseImagesTotalCount = 3;
+                var theShowCaseImagesIndexCount = 0;
+                    
+                var theInterval1 = setInterval(function(){
+                    if(theShowCaseImagesIndexCount >= theShowCaseImagesTotalCount){clearInterval(theInterval1);}
+                    $("."+theShowCaseImagesClassNames[theShowCaseImagesIndexCount]).attr('src',theShowCaseImagesNames[theShowCaseImagesIndexCount]);
+                    theShowCaseImagesIndexCount++;
+                },100);
+                    areShowCaseImagesLoaded = 1;
+                    
+                }
+                
+            }
+            
+            //This function deals with the loading of the Images of events tabs with a lazy load effect. END
+            
+            
+            
+            function theMenuButtonClickEvent()
+            {
+                $(".hamburger").toggleClass("is-active");
+                $(".theMenuDiv").toggleClass("theMenuDivShow");
+                $(".theBody").toggleClass("stopScrolling");
+            }
+            
+            function theVariableSetup()
+            {
+                window.onload = function(){
+                    $(".theLoaderDiv").slideUp("slow");
+                    $(".theBody").toggleClass("stopScrolling");
+                    theImageLoaderFunction();
+                }
+                
+                window.onresize = function()
+                {
+                    onWindowScrollEvent();
+                    theEventImagesLoaderFunction();
+                }
+                console.log("The variables have setup");
+                window.addEventListener("scroll", onWindowScrollEvent);
+                footer_ID = document.getElementById("footer_ID");
+                theFrontDiv_d_ID = document.getElementById("theFrontDiv_d_ID");
+                onWindowScrollEvent();
+                theEventImagesLoaderFunction();
+            }
+            theVariableSetup();
+            onWindowScrollEvent();
+            
+            
+            
+            
+        </script>
+        
+        
+    </body>
+</html>

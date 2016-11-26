@@ -1,0 +1,1316 @@
+body{
+    margin: 0px;
+    padding:0px;
+    overflow-x: hidden;
+    background: white;
+}
+
+.stopScrolling
+{
+    overflow: hidden;
+}
+
+a{text-decoration: none;}
+
+.theFrontDiv_d
+{
+    height: 100vh;
+    width: 100%;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    background: #ffe0b2;
+    margin-top: 100px;
+}
+
+
+
+.theLogoImageDiv
+{
+    display: flex;
+    align-items: center;
+    background: transparent;
+    top:0;
+    left:0;
+    margin: 10px;
+    margin-left: 30px;
+    padding: 0px;
+    z-index: 20;
+}
+
+.theLogoImage
+{
+    height: 80px;
+}
+
+
+.theNFACLogoCaption
+{
+    align-items: center;
+    color: #ff9800;
+    margin-left: 5px;
+    padding-left: 10px;
+    border-left: 2px solid orange;
+    font-family: 'Bree Serif', sans-serif;
+}
+
+.theNFACLogoCaptionItem
+{
+    display: inline-block;
+}
+
+.theHeader_d
+{
+    height: 100px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.9);
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+
+.theCarouselDiv_d
+{
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 100px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.theCarouselContainer
+{
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.theCarouselContentContainer
+{
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.item
+{
+    height: 100%;
+    width: 100%;
+    background: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+@keyframes theCarouselBackImageAnimation
+{
+    0%{transform: scale(1);}
+    50%{transform: scale(1.3);}
+    100%{transform: scale(1);}
+}
+
+
+.theCarouselBackImage
+{
+    animation-name: theCarouselBackImageAnimation;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    width: 100%;
+}
+
+.carousel-control,.theCarouselControlAnchore
+{
+    width: 50px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    opacity: 1;
+    top:50%;
+    margin-top: -50px;
+    overflow: hidden;
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+
+.theCaruoselControlIconContainer
+{
+    height: 100%;
+    width: 50px;
+    overflow: hidden;
+    background-color: #ff9800;
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-delay: 0.2s;
+    
+}
+
+.theCaruoselControlIconContainer:hover,
+.theCaruoselControlIconContainer:focus
+{
+    width: 100%;
+}
+
+.theCarouselControlAnchore:hover
+{
+    opacity: 1;
+    margin-top: -60px;
+    height: 120px;
+    width: 50px;
+    background-color:transparent;
+    background: transparent;
+}
+
+.theIconImage
+{
+    height: 50px;
+    margin: 0px;
+    margin-left: auto;
+    padding: 0px;
+    margin-right: auto;
+}
+
+.theItemContentDiv_d
+{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgba(0,0,0,0.4);
+    z-index: 10;
+}
+
+.theFooter
+{
+    height: auto;
+    background-color: #212121;
+    width: 100%;
+    z-index: -5;
+    padding: 50px;
+    overflow: hidden;
+}
+
+.theSocialHeading
+{
+    color:rgba(250,250,250,0.9);
+    font-family: sans-serif;
+    font-weight: 300;
+    width: 100%;
+    text-align: center;
+    margin-left: -200px;
+    opacity: 0;
+}
+
+.theSocialIconsDiv
+{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 0px;
+}
+
+.theSocialIconsContainer
+{
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid rgba(250,250,250,0.6);
+    border-top: 1px solid rgba(250,250,250,0.6);
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-right: 5px;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.theSocialButton
+{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    background-position: center;
+    background-size: 100% 100%;
+    margin: 5px;
+    padding: 0px;
+    transition-property: background-image;
+    transition-duration: 0.5s;
+}
+
+.theTwitterButton
+{
+    background-image: url(theImages/twitterIcon.svg);
+}
+
+.theTwitterButton:hover,
+.theTwitterButton:focus
+{
+    background-image: url(theImages/theTwitterButtonWhite.svg);
+}
+
+.theFaceBookButton
+{
+    background-image: url(theImages/facebookIcon.svg);
+}
+
+.theFaceBookButton:hover,
+.theFaceBookButton:focus
+{
+    background-image: url(theImages/facebookIconWhite.svg);
+}
+
+.theInstagramButton
+{
+    background-image: url(theImages/instagramIcon.svg);
+}
+
+.theInstagramButton:hover,
+.theInstagramButton:focus
+{
+    background-image: url(theImages/instagramIconWhite.svg);
+}
+
+.theLocationButton
+{
+    background-image: url(theImages/locationIcon.svg);
+}
+
+.theLocationButton:hover,
+.theLocationButton:focus
+{
+    background-image: url(theImages/locationIconWhite.svg);
+}
+
+@keyframes theSBDShowAnimation 
+{
+    0%{transform: translateX(-700px) rotateZ(-540deg);opacity: 0;}
+    100%{transform: translateX(0px) rotateZ(0deg);opacity: 1;}
+}
+
+.sb_d
+{
+    transform: scale(2);
+    opacity: 0;
+}
+
+.theFooterAnchoreList
+{
+    display: flex;
+    width: 100%;
+    padding: 40px;
+    padding-bottom: 10px;
+}
+
+.theFooterAnchore
+{
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: rgba(255,255,255,1);
+    font-size: 16px;
+    padding: 5px;
+    margin-top: 5px;
+    font-family: sans-serif;
+    font-weight: 300;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition-property: all;
+    transition-duration: 0.4s;
+    opacity: 0;
+}
+
+
+
+.theFooterAnchore:hover,
+.theFooterAnchore:focus
+{
+    border-radius: 100px;
+    color: rgba(250,250,250,0.9);
+    text-decoration: none;
+}
+
+
+.theFooterLogoDiv
+{
+    display: flex;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.theFootorLogoImage
+{
+    display: inline-block;
+    margin-right: 10px;
+    height: 100px;
+    opacity: 0;
+    transform: scale(0) rotateZ(-360deg);
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.theFootorLogoImageShow
+{
+    opacity: 1;
+    transform: scale(1) rotateZ(0deg);
+}
+
+
+.theBelowFooterDiv
+{
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    padding: 0px;
+    background: #ffe0b2;
+}
+
+
+.theBelowFooterTextPara
+{
+    color: #454545;
+    padding: 150px;
+    margin: 0px;
+    height: auto;
+    padding-bottom: 70px;
+    padding-top: 70px;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+
+.theHamburgerButton_d
+{
+    display: inline-block;
+    outline: none;
+    margin-left: auto;
+    display: block;
+    margin-right: auto;
+    z-index: 20;
+}
+/*the hamburger styles*/
+
+.hamburger {
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, -webkit-filter;
+  transition-property: opacity, filter;
+  transition-property: opacity, filter, -webkit-filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible; }
+
+  .hamburger:hover {
+    opacity: 1.0; }
+
+
+.hamburger-box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: relative; }
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px; }
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 40px;
+    height: 3px;
+    border-radius: 0px;
+    position: absolute;
+    background: #ffa800;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease; }
+  .hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block; }
+  .hamburger-inner::before {
+    top: -10px; }
+  .hamburger-inner::after {
+    bottom: -10px; }
+
+
+
+.hamburger--collapse .hamburger-inner {
+  top: auto;
+  bottom: 0;
+  transition-duration: 0.15s;
+  transition-delay: 0.15s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  .hamburger--collapse .hamburger-inner::after {
+    top: -20px;
+    transition: top 0.3s 0.3s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear; }
+  .hamburger--collapse .hamburger-inner::before {
+    transition: top 0.12s 0.3s cubic-bezier(0.33333, 0.66667, 0.66667, 1), -webkit-transform 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: top 0.12s 0.3s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: top 0.12s 0.3s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+.hamburger--collapse.is-active .hamburger-inner {
+  -webkit-transform: translate3d(0, -10px, 0) rotate(-45deg);
+          transform: translate3d(0, -10px, 0) rotate(-45deg);
+  transition-delay: 0.32s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  .hamburger--collapse.is-active .hamburger-inner::after {
+    top: 0;
+    opacity: 0;
+    transition: top 0.3s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.27s linear; }
+  .hamburger--collapse.is-active .hamburger-inner::before {
+    top: 0;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    transition: top 0.12s 0.18s cubic-bezier(0.33333, 0, 0.66667, 0.33333), -webkit-transform 0.15s 0.42s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: top 0.12s 0.18s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.15s 0.42s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: top 0.12s 0.18s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.15s 0.42s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.15s 0.42s cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+.theHamburgerButtonContainer
+{
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+
+.theMenuDiv
+{
+    display: flex;
+    align-items: center;
+    z-index: 19;
+    background-color: rgba(0,0,0,0.95);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left:0;
+    padding: 0px;
+    padding-top: 100px;
+    margin: 0px;
+    margin-top: -100vh;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.theMenuDivShow
+{
+    margin-top: 0px;
+}
+
+.theMenuDivItemsList
+{
+    flex: 0.7;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 100px;
+}
+
+.theMenuItemAnchore
+{
+    display: block;
+    color: #ff9800;
+    font-size: 30px;
+    font-family: 'Bree Serif',sans-serif;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+.theMenuItemAnchore:hover,
+.theMenuItemAnchore:focus
+{
+    transform: scale(1.04);
+    text-decoration: none;
+    color: #ff9800;
+}
+
+.theMenuDivTextDiv
+{
+    display: inline-block;
+    flex: 1.3;
+}
+
+.theMenuDivTextPara
+{
+    margin: 100px;
+    margin-left: -10px;
+    margin-right: 100px;
+    padding: 70px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: #dddddd;
+    border-left: 2px solid #cccccc;
+}
+
+.theItemContentDivInnerDiv_d
+{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+}
+
+.theItemContentDivInnerDivContentDiv_d
+{
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-family: 'Sorts Mill Goudy', serif;
+    padding-bottom: 80px;
+}
+
+.theItemContentDivInnerDivContentDivHeading_d
+{
+    font-size: 52px;
+    padding: 10px;
+    padding-left:40px;
+    padding-right:40px;
+    border-bottom: 2px solid white;
+}
+
+.theItemContentDivInnerDivContentDivTimeDate_d
+{
+    font-family:  serif;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.theItemContentDivInnerDivContentDivReadMoreButton_d
+{
+    font-family: sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    font-weight: 100;
+    color: white;
+    display: block;
+    padding: 8px;
+    border:1px solid white;
+    opacity: 1;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+.theItemContentDivInnerDivContentDivReadMoreButton_d:hover,
+.theItemContentDivInnerDivContentDivReadMoreButton_d:focus
+{
+    background-color: white;
+    color: #212121;
+    opacity: 0.95;
+    text-decoration: none;
+}
+
+.theAboutUsFrontDiv_d
+{
+    height: 80vh;
+    width: 100%;
+    margin-top: 100px;
+    background-image: url(theImages/aboutUsHeroImage.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.theAboutUsFrontDivContentDiv_d
+{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.theAboutUsFrontDivHeading_d
+{
+    margin-left: auto;
+    margin-right: auto;
+    color: #ff9800;
+    text-align: center;
+    font-size: 50px;
+    padding: 10px;
+    padding-left: 40px;
+    padding-bottom: 15px;
+    background-color: rgba(21,21,21,0.9);
+    padding-right: 40px;
+    font-family:'Bree Serif',sans-serif;
+}
+
+.theAboutUsDiv_d
+{
+    height: auto;
+    background-color: #fefefe;
+    width: 100%;
+    padding: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    align-content: center;
+}
+
+.theAboutUsDivContentPara_d
+{
+    color: #212121;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.theAboutUsFrontDivHeadingSpan_d
+{
+    font-size: 60px;
+}
+    
+
+
+
+
+
+@media only screen and (max-width:769px){
+
+    
+    .theAboutUsDiv_d
+    {
+        height: auto;
+        background-color: #fefefe;
+        width: 100%;
+        padding: 30px;
+        font-size: 14px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        display: flex;
+        align-content: center;
+    }
+
+    
+    .theMenuDivTextDiv
+    {
+        display: inline-block;
+        flex: 1;
+    }
+
+    .theMenuDivTextPara
+    {
+        margin: 50px;
+        margin-right: 100px;
+        padding: 10px;
+        padding-left: 30px;
+        color: #dddddd;
+        border-left: 2px solid #cccccc;
+    }
+    
+    
+    .theCarouselControlAnchore:hover
+    {
+        opacity: 1;
+        height: 100px;
+        margin-top: -50px;
+        width: 50px;
+        background-color:transparent;
+        background: transparent;
+    }
+
+
+    
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width:767px){
+    
+    
+    .theItemContentDivInnerDiv_d
+    {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        align-items: center;
+    }
+
+    .theItemContentDivInnerDivContentDiv_d
+    {
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+        font-family: 'Sorts Mill Goudy', serif;
+        padding-bottom: 80px;
+    }
+
+    .theItemContentDivInnerDivContentDivHeading_d
+    {
+        font-size: 30px;
+        padding: 2px;
+        padding-left: 0px;
+        padding-right: 0px;
+        border-bottom: 2px solid white;
+    }
+
+    .theItemContentDivInnerDivContentDivTimeDate_d
+    {
+        font-family:  serif;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .theItemContentDivInnerDivContentDivReadMoreButton_d
+    {
+        font-family: sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+        font-weight: 100;
+        color: white;
+        display: block;
+        padding: 6px;
+        border:1px solid white;
+        opacity: 1;
+        transition-property: all;
+        transition-duration: 0.3s;
+    }
+
+    .theItemContentDivInnerDivContentDivReadMoreButton_d:hover,
+    .theItemContentDivInnerDivContentDivReadMoreButton_d:focus
+    {
+        background-color: white;
+        color: #212121;
+        opacity: 0.95;
+        text-decoration: none;
+    }
+
+    .theMenuDiv
+    {
+        overflow: auto;
+    }
+    
+    .theMenuDivTextDiv
+    {
+        display: none;
+    }
+    
+    .theMenuDivItemsList
+    {
+        flex: 1;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .theMenuItemAnchore
+    {
+        font: 24px;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .theBelowFooterTextPara
+    {
+        padding: 30px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-size: 14px;
+    }
+    
+    
+    .theSocialButton
+    {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+        background-position: center;
+        background-size: 100% 100%;
+        margin: 5px;
+        padding: 0px;
+        transition-property: background-image;
+        transition-duration: 0.5s;
+    }
+    
+    .theFooterAnchoreList
+    {
+        display: flex;
+        width: 100%;
+        padding: 20px;
+        padding-bottom: 10px;
+    }
+
+    .theFooterAnchore
+    {
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: rgba(255,255,255,1);
+        font-size: 16px;
+        padding: 5px;
+        margin-top: 5px;
+        font-family: sans-serif;
+        font-weight: 300;
+        padding-left: 10px;
+        padding-right: 10px;
+        transition-property: all;
+        transition-duration: 0.4s;
+        opacity: 1;
+    }
+    
+    
+    .sb_d
+    {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    
+    .theSocialHeading
+    {
+        color:rgba(250,250,250,0.9);
+        font-family:sans-serif;
+        font-weight: 300;
+        width: 100%;
+        text-align: center;
+        margin-left: 0px;
+        opacity: 1;
+    }
+    
+    
+    .theSocialIconsContainer
+    {
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: 1px solid rgba(250,250,250,0.6);
+        border-top: 1px solid rgba(250,250,250,0.6);
+        padding-left: 20px;
+        padding-top: 5px;
+        padding-right: 5px;
+        transform: scaleY(1);
+        opacity: 1;
+        transform-origin: top;
+    }
+
+    .theFootorLogoImage
+    {
+        display: inline-block;
+        margin-right: 10px;
+        height: 100px;
+        opacity: 1;
+        transform: scale(1) rotateZ(0deg);
+        transition-property: all;
+        transition-duration: 1s;
+    }
+
+    
+    .theLogoImageDiv
+    {
+        margin-left: 10px;
+    }
+    
+    .theLogoImage
+    {
+        height: 50px;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .theNFACLogoCaption
+    {
+        font-size: 14px;
+    }
+    
+    .theHeader_d
+    {
+        height: 80px;
+    }
+    
+    .theFrontDiv_d
+    {
+        margin-top: 80px;
+    }
+    
+    
+    .theCarouselDiv_d
+    {
+        display: block;
+        position: absolute;
+        top:0;
+        left:0;
+        padding: 0px;
+        margin: 0px;
+        margin-top: 80px;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .theHamburgerButtonContainer
+    {
+        margin-left: auto;
+        margin-right: 0px;
+    }
+
+    .theAboutUsFrontDiv_d
+    {
+        height: 80vh;
+        width: 100%;
+        margin-top: 80px;
+        background-image: url(theImages/aboutUsHeroImage.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: scroll;
+    }
+
+    .theAboutUsFrontDivContentDiv_d
+    {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0,0,0,0.4);
+    }
+
+    .theAboutUsFrontDivHeadingSpan_d
+    {
+        font-size: 40px;
+    }
+    
+    .theAboutUsFrontDivHeading_d
+    {
+        margin-left: auto;
+        margin-right: auto;
+        color: #ff9800;
+        text-align: center;
+        font-size: 30px;
+        padding: 10px;
+        padding-left: 40px;
+        padding-bottom: 15px;
+        background-color: rgba(21,21,21,0.9);
+        padding-right: 40px;
+        font-family:'Bree Serif',sans-serif;
+    }
+
+    .theAboutUsDiv_d
+    {
+        height: auto;
+        background-color: #fefefe;
+        width: 100%;
+        padding: 40px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        display: flex;
+        align-content: center;
+        
+
+    }
+
+    .theAboutUsDivContentPara_d
+    {
+        color: #212121;
+        text-align: center;
+        width: 100%;
+        font-size: 16px;
+        font-family: sans-serif;
+        font-weight: 500;
+    }
+
+}
+
+@media only screen and (max-width:321px){
+    
+    .theBelowFooterTextPara
+    {
+        padding: 30px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-size: 14px;
+    }
+    
+    
+    .theSocialButton
+    {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+        background-position: center;
+        background-size: 100% 100%;
+        margin: 0px;
+        padding: 0px;
+        transition-property: background-image;
+        transition-duration: 0.5s;
+    }
+    
+    .theFooterAnchoreList
+    {
+        display: flex;
+        width: 100%;
+        padding: 20px;
+        padding-bottom: 10px;
+    }
+
+    .theFooterAnchore
+    {
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: rgba(255,255,255,1);
+        font-size: 16px;
+        padding: 5px;
+        margin-top: 5px;
+        font-family: sans-serif;
+        font-weight: 300;
+        padding-left: 10px;
+        padding-right: 10px;
+        transition-property: all;
+        transition-duration: 0.4s;
+        opacity: 1;
+    }
+    
+    
+    .sb_d
+    {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    
+    .theSocialHeading
+    {
+        color:rgba(250,250,250,0.9);
+        font-family:sans-serif;
+        font-weight: 300;
+        width: 100%;
+        text-align: center;
+        margin-left: 0px;
+        opacity: 1;
+    }
+    
+    
+    .theSocialIconsContainer
+    {
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: 1px solid rgba(250,250,250,0.6);
+        border-top: 1px solid rgba(250,250,250,0.6);
+        padding-left: 15px;
+        padding-top: 5px;
+        padding-right: 0px;
+        transform: scaleY(1);
+        opacity: 1;
+        transform-origin: top;
+    }
+
+    .theFootorLogoImage
+    {
+        display: inline-block;
+        margin-right: 10px;
+        height: 100px;
+        opacity: 1;
+        transform: scale(1) rotateZ(0deg);
+        transition-property: all;
+        transition-duration: 1s;
+    }
+    
+    .theLogoImageDiv
+    {
+        margin-left: 10px;
+    }
+    
+    .theLogoImage
+    {
+        height: 50px;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .theNFACLogoCaption
+    {
+        font-size: 14px;
+    }
+    
+    .theHeader_d
+    {
+        height: 60px;
+    }
+    
+    .theFrontDiv_d
+    {
+        margin-top: 60px;
+    }
+    
+    
+    .theCarouselDiv_d
+    {
+        display: block;
+        position: absolute;
+        top:0;
+        left:0;
+        padding: 0px;
+        margin: 0px;
+        margin-top: 60px;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .theHamburgerButtonContainer
+    {
+        margin-left: auto;
+        margin-right: 0px;
+    }
+    
+    
+    .theItemContentDivInnerDiv_d
+    {   
+        display: flex;
+        height: 100%;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        align-items: center;
+    }
+
+    .theItemContentDivInnerDivContentDiv_d
+    {
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+        font-family: 'Sorts Mill Goudy', serif;
+        padding-bottom: 100px;
+    }
+
+    .theItemContentDivInnerDivContentDivHeading_d
+    {
+        font-size: 24px;
+        padding: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-bottom: 2px solid white;
+    }
+
+    .theItemContentDivInnerDivContentDivTimeDate_d
+    {
+        font-family:  serif;
+        width: 100%;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .theItemContentDivInnerDivContentDivReadMoreButton_d
+    {
+        font-family: sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+        font-weight: 100;
+        color: white;
+        display: block;
+        padding: 5px;
+        border:1px solid white;
+        opacity: 1;
+        transition-property: all;
+        transition-duration: 0.3s;
+    }
+
+    .theItemContentDivInnerDivContentDivReadMoreButton_d:hover,
+    .theItemContentDivInnerDivContentDivReadMoreButton_d:focus
+    {
+        background-color: white;
+        color: #212121;
+        opacity: 0.95;
+        text-decoration: none;
+    }
+
+    
+    .theAboutUsFrontDiv_d
+    {
+        height: 80vh;
+        width: 100%;
+        margin-top: 60px;
+        background-image: url(theImages/aboutUsHeroImage.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: scroll;
+    }
+
+    .theAboutUsFrontDivContentDiv_d
+    {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0,0,0,0.4);
+    }
+
+    .theAboutUsFrontDivHeadingSpan_d
+    {
+        font-size: 40px;
+    }
+    
+    .theAboutUsFrontDivHeading_d
+    {
+        margin-left: auto;
+        margin-right: auto;
+        color: #ff9800;
+        text-align: center;
+        font-size: 30px;
+        padding: 10px;
+        padding-left: 40px;
+        padding-bottom: 15px;
+        background-color: rgba(21,21,21,0.9);
+        padding-right: 40px;
+        font-family:'Bree Serif',sans-serif;
+    }
+
+    .theAboutUsDiv_d
+    {
+        height: auto;
+        background-color: #fefefe;
+        width: 100%;
+        padding: 20px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        display: flex;
+        align-content: center;
+    }
+
+    .theAboutUsDivContentPara_d
+    {
+        color: #212121;
+        text-align: center;
+        width: 100%;
+        font-size: 16px;
+        font-family: sans-serif;
+        font-weight: 500;
+    }
+
+
+}
